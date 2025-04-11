@@ -5,28 +5,28 @@ This repository contains the bioinformatics pipeline used for the analysis of wh
 ## Repository Structure
 
 .
-├── Alignment
-│   └── parabricksFsq2Bams.sh            # FASTQ to BAM conversion using Parabricks
-├── Gene_annotation
-│   ├── processRawVariant.py             # Extract deleterious variants from annotations
-│   └── runSIFT.sh                       # Run SIFT for variant annotation
-├── QC
-│   ├── ethnicity_pred_gnomad_cont.py    # Ethnicity prediction using gnomAD
-│   ├── ExtractInfo4Table.sh             # Extract QC metrics from BAM files
-│   ├── IPNSamtoolsCheck.sh              # BAM file quality check using samtools
-│   ├── snvstory_ethnicity_check.sh      # Ethnicity check using SNVstory
-│   └── snvstory_selectVariant.sh        # Select variants from gVCF files
-└── STR_detection_pipeline
-    ├── python_scripts/                  # Helper Python scripts
-    ├── 00_RunAll.sh                     # Master script to run the entire STR pipeline
-    ├── 1_EHdn_GenerateStrProfile.sh     # Generate STR profiles using ExpansionHunterDenovo
-    ├── 2_EHdn_GenerateManifestFile.sh   # Create manifest file for EHdn
-    ├── 3_EHdn_RunAnnotEHdn.sh           # Run and annotate EHdn results
-    ├── 4_EH_RunEH.sh                    # Run ExpansionHunter
-    ├── 5_CombineEHResult.sh             # Combine EH results
-    ├── 6_RunBLAT.sh                     # Run BLAT alignment of STR regions
-    ├── 7_BuildDatabase.sh               # Build STR sequence database
-    ├── 8_QueryDatabase.sh               # Query STR database
+├── Alignment\
+│   └── parabricksFsq2Bams.sh            # FASTQ to BAM conversion using Parabricks\
+├── Gene_annotation\
+│   ├── processRawVariant.py             # Extract deleterious variants from annotations\
+│   └── runSIFT.sh                       # Run SIFT for variant annotation\
+├── QC\
+│   ├── ethnicity_pred_gnomad_cont.py    # Ethnicity prediction using gnomAD\
+│   ├── ExtractInfo4Table.sh             # Extract QC metrics from BAM files\
+│   ├── IPNSamtoolsCheck.sh              # BAM file quality check using samtools\
+│   ├── snvstory_ethnicity_check.sh      # Ethnicity check using SNVstory\
+│   └── snvstory_selectVariant.sh        # Select variants from gVCF files\
+└── STR_detection_pipeline\
+    ├── python_scripts/                  # Helper Python scripts\
+    ├── 00_RunAll.sh                     # Master script to run the entire STR pipeline\
+    ├── 1_EHdn_GenerateStrProfile.sh     # Generate STR profiles using ExpansionHunterDenovo\
+    ├── 2_EHdn_GenerateManifestFile.sh   # Create manifest file for EHdn\
+    ├── 3_EHdn_RunAnnotEHdn.sh           # Run and annotate EHdn results\
+    ├── 4_EH_RunEH.sh                    # Run ExpansionHunter\
+    ├── 5_CombineEHResult.sh             # Combine EH results\
+    ├── 6_RunBLAT.sh                     # Run BLAT alignment of STR regions\
+    ├── 7_BuildDatabase.sh               # Build STR sequence database\
+    ├── 8_QueryDatabase.sh               # Query STR database\
     └── 9_UnsupervisedIPNFinalStep.R     # Unsupervised clustering for RFC1 repeat analysis
 
 ## Pipeline Components
