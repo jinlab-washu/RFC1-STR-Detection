@@ -106,7 +106,7 @@ bsub -K -G compute-jin810 -q general-interactive -n 1 -R 'rusage[mem=20GB]' -a '
         --output-dir "${FILTERED_RESULT_DIR}" \
         --output-file "${FILTERED_RESULT_DIR}/EHdn_combined_results.csv" \
         --repeatmasker-file "${REPEAT_MASKER}" \
-        --case-count 810 \
+        --case-count 788 \
         --control-count 879 \
         --gene-list-files "${REF_PN_GENES},${REF_FUNC_GENES},${REF_STR_GENES},${REF_HIGH_DRG_EXP}"
 
